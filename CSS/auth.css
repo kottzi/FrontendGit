@@ -21,7 +21,7 @@ body {
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  top: 34%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -60,7 +60,7 @@ form {
 }
 
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
   padding: 10px;
   border-radius: 5px;
@@ -97,4 +97,17 @@ button[type="submit"]:hover {
 
 #join:hover {
   color: #252525;
+}
+
+.registration {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.registration:hover {
+  color: #505050;
+  transition: background-color 0.5s linear;
 }
