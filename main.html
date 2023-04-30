@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/main.css" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +14,7 @@
     <title>Моя общага | Домашняя страница</title>
 </head>
 
-<body style="background-color: #fff;">
+<body style="background-color: #252525;">
 
     <header>
         <div class="header_logo" id="header">
@@ -28,16 +25,18 @@
                 <button class="header_buttons">
                     <img src="PNG_BLACK/logoEN.png" alt="en_logo" class="logoEN">
                 </button>
-                <button class="header_buttons">
-                    <img src="PNG_BLACK/logoAUTH.png" alt="auth_logo" class="logoAUTH">
-                </button>
+                <form action="auth.html">
+                    <button class="header_buttons">
+                        <img src="PNG_BLACK/logoAUTH.png" alt="auth_logo" class="logoAUTH">
+                    </button>
+                </form>
             </div>
         </div>
         <div class="header_nav">
             <a href="#header" class="header_nav_text">ГЛАВНАЯ</a>
             <a href="#announcements" class="header_nav_text">ОБЪЯВЛЕНИЯ</a>
             <a href="#services" class="header_nav_text">УСЛУГИ</a>
-            <a href="#info" class="header_nav_text">ИНФОРМАЦИЯ</a>
+            <a href="#contacts" class="header_nav_text">ИНФОРМАЦИЯ</a>
         </div>
     </header>
 
@@ -47,7 +46,7 @@
     </main>
 
     <footer>
-        <div class="info" id="info"></div>
+        <div class="contacts" id="contacts"></div>
     </footer>
       
 </body>

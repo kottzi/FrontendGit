@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+
+.container {
+  width: 400px;
+  height: 600px;
+  margin: 100px auto;
+  background-color: #252525;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  color: #fff;
+  font-weight: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#auth_logo {
+  left: 125px;
+  top: 50px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.forgot_password {
+  text-align: right;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.forgot_password:hover {
+  color: #505050;
+  transition: background-color 0.5s linear;
+}
+
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  background-color: #fafafa;
+}
+
+button[type="submit"] {
+  margin-left: 75px;
+  margin-top: 50px;
+    position: relative;
+    width: 200px;
+    height: 50px;
+
+    background: #252525;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #fafafa;
+  transition: background-color 0.5s linear;
+}
+
+#join {
+  color: #fafafa;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#join:hover {
+  color: #252525;
+}

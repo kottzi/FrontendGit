@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/home.css" type="text/css">
-
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/home.css" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,22 +14,23 @@
     <title>Моя общага | Домашняя страница</title>
 </head>
 
-<body style="background-color: #ffffff;">
+<body style="background-color: #252525;">
 
     <header>
       <div class="header_logo">
         <div class="header-left">
-            <img src="PNG/logo_white.png" alt="main_logo" class="logo">
+            <img src="PNG/logo_white.png" alt="main_logo" id="logo">
         </div>
         <div class="header-right">
+          <button class="header_buttons">
+            <img src="PNG/logoEN.png" alt="en_logo" id="lang_button">
+          </button>
+          <form action="auth.html">
             <button class="header_buttons">
-                <img src="PNG/logoEN.png" alt="en_logo" class="logoEN">
+              <img src="PNG/logoAUTH.png" alt="auth_logo" id="auth_button">
             </button>
-            <button class="header_buttons">
-                <img src="PNG/logoAUTH.png" alt="auth_logo" class="logoAUTH">
-            </button>
+          </form>
         </div>
-    </div>
       </div>
     </header>
 
@@ -64,11 +62,13 @@
           <div class="footerbox">
             <a class="instruction">ИНСТРУКЦИЯ :</a>
             <div class="footer-buttons">
-              <button class="footer-button" id="authorization">
-                <a class="footer-button-text">
-                  АВТОРИЗАЦИЯ
-                </a>
-              </button>
+              <form action="auth.html">
+                <button class="footer-button" id="authorization">
+                  <a class="footer-button-text">
+                    АВТОРИЗАЦИЯ
+                  </a>
+                </button>
+              </form>
               <button class="footer-button" id="registration">
                 <a class="footer-button-text">
                   РЕГИСТРАЦИЯ
