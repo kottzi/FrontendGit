@@ -97,6 +97,10 @@ a {
     
     color: #FFFFFF;
 }
+
+.header_nav_text:hover {
+    color: #505050;
+}
 .header_buttons {
     border-radius: 100%;
     border: none;

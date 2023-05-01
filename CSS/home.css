@@ -276,3 +276,20 @@ body {
     
     background: #252525;
 }
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    color: #fff;
+    margin-right: 1050px;
+    margin-bottom: 150px;
+}
+#imageText {
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    color: #fff;
+    margin-left: 100px;
+    margin-bottom: 140px;
+}
