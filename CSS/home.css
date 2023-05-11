@@ -14,95 +14,107 @@ body {
 
 
 
-.header_logo {
+header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 975px;
-    
-    position: absolute;
     width: 100%;
-    height: 100px;
+    height: 75px;
     
     background: #252525;
 }
-.header-left {
+.header-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-    width: 200px;
-    height: 100px;
+    width: 1200px;
+    height: 75px;
+
+    gap: 925px;
+
+    background: #252525;
 }
-.header-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 25px;
-    
+.logo {
     width: 150px;
     height: 75px;
-}
-#logo {
-    width: 200px;
-    height: 100px;
     
-    background: url(PNG/logo_white.png);
+    background: url(logo);
 }
-#lang_button {
+.logoAUTH {
     width: 50px;
     height: 50px;
 
-    background: url(PNG/logoEN.png);
+    background: url(logoAUTH.png);
 }
-#auth_button {
-    width: 75px;
-    height: 75px;
+.logoEN {
+    width: 30px;
+    height: 30px;
 
-    background: url(PNG/logoAUTH.png);
+    background: url(logoEN.png);
 }
-.header_buttons {
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+}
+.header-button {
+    padding: 0;
     border-radius: 50%;
     border: none;
     background-color: #252525;
 }
-.header_buttons:hover {
+#logoEN-button {
+    width: 30px;
+    height: 30px;
+}
+#logoAUTH-button {
+    width: 50px;
+    height: 50px;
+}
+
+.header-button:hover {
     background-color: #353535;
     cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgb(150, 150, 150), 0 17px 50px 0 rgba(150, 150, 150, 0.20);
+    transition: 0.2s;
+    box-shadow: 0 12px 16px 0 rgba(150,150,150,0.50), 0 17px 50px 0 rgba(150,150,150,0.50);
 }
-.header_buttons:active {
+.header-button:active {
     transform: translateY(1px);
 }
 
 
 
-.download {
+.downloads {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 925px;
-    
-    position: absolute;
     width: 100%;
-    height: 100px;
-    top: 100px;
+    height: 75px;
+    top: 75px;
     
-    background: #fafafa;
+    background: #FAFAFA;
 }
-.download-right {
+.download-container {
     display: flex;
     flex-direction: row;
+    justify-content: right;
     align-items: center;
-    gap: 25px;
+
+    gap: 20px;
     
-    width: 425px;
-    height: 50px;
+    position: absolute;
+    width: 1175px;
+    height: 75px;
+    
+    background: #FAFAFA;
 }
-.download_buttons {
+.download-buttons {
     text-align: left;
     padding-left: 20px;
     justify-content: center;
@@ -119,15 +131,16 @@ body {
     color: #FFFFFF;
     text-align: left;
 }
-.download_buttons:hover {
+.download-buttons:hover {
     background-color: #353535;
     cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgb(150, 150, 150), 0 17px 50px 0 rgba(150, 150, 150, 0.20);
+    transition: 0.2s;
+    box-shadow: 0 12px 16px 0 rgba(150, 150, 150, 0.20), 0 17px 50px 0 rgba(150, 150, 150, 0.20);
 }
-.download_buttons:active {
+.download-buttons:active {
     transform: translateY(1px);
 }
-.download-WIN {
+#download-WIN {
     position: absolute;
     width: 25px;
     height: 25px;
@@ -136,7 +149,7 @@ body {
 
     background: url(PNG/logoWIN.png);
 }
-.download-ANDROID {
+#download-ANDROID {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -157,7 +170,7 @@ body {
     position: absolute;
     width: 100%;
     height: 300px;
-    top: 200px;
+    top: 150px;
     
     background-image:url(rutPhoto.png)
 }
@@ -173,45 +186,65 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 125px;
+
     
     position: absolute;
     width: 100%;
-    height: 500px;
-    top: 500px;
+    height: 400px;
+    top: 450px;
     
-    background: #202020;
+    background: #252525;
 }
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-
-
-.footerbox {
-    position: relative;
-    width: 600px;
+    
+    position: absolute;
+    width: 1200px;
+    height: 400px;
+    gap: 75px;
+    
+    background: #252525;
+}
+.infobox {
+    width: 550px;
     height: 300px;
 
     background: #202020;
     border: 10px solid #FFFFFF;
 }
-.aboutUS {
+#infobox1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+#infobox2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#aboutUS {
     position: absolute;
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 500;
 
-    margin-top: 25px;
-    margin-left: 25px;
+    position: absolute;
+    margin-left: 20px;
+    margin-bottom: 200px;
+
     color: #ffffff;
 }
-
-
-
-.instruction {
+#instruction {
     position: absolute;
     font-size: 40px;
     font-weight: 500;
 
-    margin-top: 30px;
-    margin-left: 150px;
+    margin-bottom: 200px;
     color: #ffffff;
 }
 .footer-buttons {
@@ -219,9 +252,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    margin-left: 45px;
-    top: 200px;
+    gap: 40px;
+
+    margin-top: 175px;
     
     position: absolute;
     width: 500px;
@@ -253,7 +286,8 @@ body {
 .footer-button:hover {
     background-color: #353535;
     cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgb(150, 150, 150), 0 17px 50px 0 rgba(150, 150, 150, 0.20);
+    transition: 0.2s;
+    box-shadow: 0 12px 16px 0 rgba(150, 150, 150, 0.50), 0 17px 50px 0 rgba(150, 150, 150, 0.50);
 }
 .footer-button:active {
     transform: translateY(1px);
@@ -261,35 +295,28 @@ body {
 
 
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 850px;
+    
+    background: #353535;
+}
 .contacts {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 300px;
-    gap: 975px;
-    
-    position: absolute;
-    width: 100%;
+    width: 1200px;
     height: 100px;
-    top: 1000px;
-    
-    background: #252525;
-}
 
-h1 {
-    font-size: 40px;
-    font-weight: 500;
-    position: absolute;
-    color: #fff;
-    margin-right: 1050px;
-    margin-bottom: 150px;
-}
-#imageText {
-    font-size: 20px;
-    font-weight: 400;
-    position: absolute;
-    color: #fff;
-    margin-left: 100px;
-    margin-bottom: 140px;
+    gap: 0px;
+
+    background: #353535;
 }

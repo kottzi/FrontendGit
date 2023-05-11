@@ -14,38 +14,46 @@
     <title>Моя общага | Домашняя страница</title>
 </head>
 
-<body style="background-color: #252525;">
+<body style="background-color: #353535;">
 
     <header>
-        <div class="header_logo" id="header">
-            <div class="header-left">
-                <img src="PNG_BLACK/logo.png" alt="main_logo" class="logo">
+        <div class="header-container" id="header">
+            <div class="header-logo">
+                <img src="PNG_BLACK/logo_ver1.png" alt="logo" class="logo">
             </div>
-            <div class="header-right">
-                <button class="header_buttons">
-                    <img src="PNG_BLACK/logoEN.png" alt="en_logo" class="logoEN">
+            <div class="header-buttons">
+                <button class="header-button" id="logoEN-button">
+                    <img src="PNG_BLACK/logoEN.png" alt="logoEN" class="logoEN">
                 </button>
-                
-                <button class="header_buttons">
-                    <img src="PNG_BLACK/logoAUTH.png" alt="auth_logo" class="logoAUTH">
+                <button class="header-button" id="logoAUTH-button">
+                    <img src="PNG_BLACK/logoAUTH.png" alt="logoAUTH" class="logoAUTH">
                 </button>
             </div>
         </div>
-        <div class="header_nav">
-            <a href="#header" class="header_nav_text">ГЛАВНАЯ</a>
-            <a href="#announcements" class="header_nav_text">ОБЪЯВЛЕНИЯ</a>
-            <a href="#services" class="header_nav_text">УСЛУГИ</a>
-            <a href="#contacts" class="header_nav_text">ИНФОРМАЦИЯ</a>
-        </div>
+
+        <nav class="header-nav">
+            <a href="#header" class="nav-text">ГЛАВНАЯ</a>
+            <a href="#announcements" class="nav-text">ОБЪЯВЛЕНИЯ</a>
+            <a href="#services" class="nav-text">УСЛУГИ</a>
+            <a href="#contacts" class="nav-text">ИНФОРМАЦИЯ</a>
+        </nav>
     </header>
 
     <main>
-        <div class="announcements" id="announcements"></div>
-        <div class="services" id="services"></div>
+        <div class="announcements" id="announcements">
+            <div class="announcements-container">
+
+            </div>
+        </div>
+        <div class="services" id="services">
+            <div class="services-container">
+                
+            </div>
+        </div>
     </main>
 
     <footer>
-        <div class="contacts" id="contacts"></div>
+        <div class="contacts-container" id="contacts"></div>
     </footer>
       
 </body>

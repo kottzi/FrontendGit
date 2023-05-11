@@ -14,81 +14,75 @@
     <title>Моя общага | Домашняя страница</title>
 </head>
 
-<body style="background-color: #252525;">
+<body style="background-color: #353535;">
 
     <header>
-      <div class="header_logo">
-        <div class="header-left">
-            <img src="PNG/logo_white.png" alt="main_logo" id="logo">
+      <div class="header-container" id="header">
+        <div class="header-logo">
+            <img src="PNG/logo_white_ver1.png" alt="logo" class="logo">
         </div>
-        <div class="header-right">
-          <button class="header_buttons">
-            <img src="PNG/logoEN.png" alt="en_logo" id="lang_button">
-          </button>
-          <form action="auth.html">
-            <button class="header_buttons">
-              <img src="PNG/logoAUTH.png" alt="auth_logo" id="auth_button">
+        <div class="header-buttons">
+            <button class="header-button" id="logoEN-button">
+                <img src="PNG/logoEN.png" alt="logoEN" class="logoEN">
             </button>
-          </form>
+            <form action="auth.html">
+              <button class="header-button" id="logoAUTH-button">
+                <img src="PNG/logoAUTH.png" alt="logoAUTH" class="logoAUTH">
+            </button>
+            </form>
         </div>
-      </div>
+    </div>
     </header>
 
       <main>
-        <div class="download">
-          <div class="download-left">
-          </div>
-          <div class="download-right">
-            <button class="download_buttons">
+        <div class="downloads">
+          <div class="download-container">
+            <button class="download-buttons">
               <a class="download-text">Скачать для</a>
-              <img src="PNG/logoWIN.png" alt="WIN_logo" class="download-WIN">
+              <img src="PNG/logoWIN.png" alt="WIN_logo" id="download-WIN">
             </button>
-            <button class="download_buttons">
+            <button class="download-buttons">
               <a class="download-text">Скачать для</a>
-              <img src="PNG/logoANDROID.png" alt="ANDROID_logo" class="download-ANDROID">
+              <img src="PNG/logoANDROID.png" alt="ANDROID_logo" id="download-ANDROID">
             </button>
           </div>
         </div>
-      
+
         <div class="photo">
           <img src="rutPhoto.png" alt="rutPhoto" class="rutPhoto">
-          <!--
-          <h1>МОЯ ОБЩАГА</h1>
-          <p id="imageText">
-            - проект, разработнный для упрощения проживания внутри общежитий по всей стране!
-          </p>
-        -->
         </div>
 
         <div class="info">
-          <div class="footerbox">
-            <a class="aboutUS">О НАС :</a>
-          </div>
-  
-          <div class="footerbox">
-            <a class="instruction">ИНСТРУКЦИЯ :</a>
-            <div class="footer-buttons">
-              <form action="auth.html">
-                <button class="footer-button" id="authorization">
-                  <a class="footer-button-text">
-                    АВТОРИЗАЦИЯ
-                  </a>
-                </button>
-              </form>
-              <form action="reg.html">
-                <button class="footer-button" id="registration">
-                  <a class="footer-button-text">
-                    РЕГИСТРАЦИЯ
-                  </a>
-                </button>
-              </form>
+          <div class="info-container">
+            <div class="infobox" id="infobox1">
+              <a id="aboutUS">О НАС :</a>
+            </div>
+    
+            <div class="infobox" id="infobox2">
+              <a id="instruction">ИНСТРУКЦИЯ</a>
+              <div class="footer-buttons">
+                <form action="auth.html">
+                  <button class="footer-button" id="authorization">
+                    <a class="footer-button-text">
+                      АВТОРИЗАЦИЯ
+                    </a>
+                  </button>
+                </form>
+                <form action="reg.html">
+                  <button class="footer-button" id="registration">
+                    <a class="footer-button-text">
+                      РЕГИСТРАЦИЯ
+                    </a>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </main>
 
       <footer>
-        <div class="contacts"></div>
+          <div class="contacts-container"></div>
       </footer>
       
 </body>
