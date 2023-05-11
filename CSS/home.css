@@ -296,6 +296,8 @@ header {
 
 
 footer {
+    color: white;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -316,7 +318,11 @@ footer {
     width: 1200px;
     height: 100px;
 
-    gap: 0px;
+    gap: 20px;
 
     background: #353535;
+}
+.icons{
+    height: 50px;
+    width: 50px;
 }
