@@ -173,7 +173,6 @@ header {
 }
 .announcements-container-item{
     text-align: center;
-    color: #252525;
     position: relative;
     padding: 30px;
 }
@@ -184,20 +183,20 @@ header {
     width: calc(100%+10px);
     
     color: #000;
-    background-color: grey;
-    border: 2px solid black;
+    background-color: #252525;
+    border: 5px solid #454545;
     border-radius: 10px;
     line-height: 1.44;
     
 }
 .article-short p{
     line-height: 1.44;
-    color: #000;
+    color: #fafafa;
     
 }
 .article-short h2{
     line-height: 1.44;
-    color: #000;
+    color: #fafafa;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -290,6 +289,33 @@ header {
     width: 1200px;
     height: 800px;
 }
+#create-services-form {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1100px;
+    top: 700px;
+}
+#create-services {
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: #252525;
+}
+#create-services:hover {
+    background-color: #454545;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 12px 16px 0 rgba(150,150,150,0.20), 0 17px 50px 0 rgba(150,150,150,0.20);
+}
+#create-services img {
+    width: 50px;
+    height: 50px;
+}
 .services-container3 {
     display: flex;
     flex-direction: row;
@@ -343,10 +369,6 @@ header {
   #all-services p:hover {
     color: #FAFAFA;
     transition: 0.3s;
-  }
-  .logoPLUS {
-    width: 50px;
-    height: 50px;
   }
 
 
