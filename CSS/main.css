@@ -15,7 +15,6 @@ a {
     text-decoration: none;
 }
 
-
 header {
     display: flex;
     flex-direction: row;
@@ -177,7 +176,7 @@ header {
     padding: 30px;
 }
 
-.article-short{
+.announcements-article {
     position: relative;
     height: calc(100% + 10px);
     width: calc(100%+10px);
@@ -186,15 +185,14 @@ header {
     background-color: #252525;
     border: 5px solid #454545;
     border-radius: 10px;
-    line-height: 1.44;
-    
+    line-height: 1.44; 
 }
-.article-short p{
+.announcements-article p{
     line-height: 1.44;
     color: #fafafa;
     
 }
-.article-short h2{
+.announcements-article h2{
     line-height: 1.44;
     color: #fafafa;
     padding-left: 10px;
@@ -279,22 +277,64 @@ header {
     color: #FAFAFA;
 }
 .services-container2 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
-    align-items: center;
-
     position: absolute;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2,400px) ;
+    grid-auto-flow: column;
+
     margin-top: 100px;
     width: 1200px;
-    height: 800px;
+    height: 800px;  
 }
+.services-container-item{
+    text-align: center;
+    position: relative;
+    padding: 30px;
+}
+.services-container-item img{
+    width: 100px;
+    height: 100px;
+}
+.services-article {
+    position: relative;
+    height: calc(100% + 10px);
+    width: calc(100%+10px);
+    
+    color: #000;
+    background-color: #fafafa;
+    border: 5px solid #454545;
+    border-radius: 10px;
+    line-height: 1.44;
+}
+.services-article p{
+    line-height: 1.44;
+    color: #252525;
+    
+}
+.services-article h2{
+    line-height: 1.44;
+    color: #252525;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.services-container-item img{
+    width: 100px;
+    height: 100px;
+}
+
+
 #create-services-form {
-    position: absolute;
+    position: fixed;
+    z-index: 999;
+
+    left: 94%;
+    top: 89%;
     width: 50px;
     height: 50px;
-    left: 1100px;
-    top: 700px;
+    border: none;
 }
 #create-services {
     position: relative;
@@ -304,7 +344,7 @@ header {
     padding: 0;
     border-radius: 50%;
     border: none;
-    background-color: #252525;
+    background-color: #353535;
 }
 #create-services:hover {
     background-color: #454545;
